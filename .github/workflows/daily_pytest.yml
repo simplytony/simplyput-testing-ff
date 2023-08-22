@@ -5,6 +5,10 @@ on:
     # Runs at 00:00 UTC everyday
     - cron: '0 0 * * *'
   workflow_dispatch:
+
+env:
+  SP_API_KEY: ${{ secrets.SP_API_KEY }}
+  ORG_ID: ${{ secrets.ORG_ID }} 
   
 jobs:
   test:
@@ -26,7 +30,5 @@ jobs:
         pip install -r requirements.txt
 
     - name: Run pytest
-      env:
-        SP_API_KEY: ${{ secrets.SP_API_KEY }}
-        ORG_ID: ${{ secrets.ORG_ID }}
+
       run: pytest
