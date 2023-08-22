@@ -1,4 +1,5 @@
 # Simplyput-testing
+[![Daily SimplyPut Tests](https://github.com/simplytony/simplyput-testing-ff/actions/workflows/daily_pytest.yml/badge.svg)](https://github.com/simplytony/simplyput-testing-ff/actions/workflows/daily_pytest.yml)
 
 This repo is here to help you run automated tests on your questions on simplyput. After folowing these instructions you will have:
 - A repo to add your tests to
