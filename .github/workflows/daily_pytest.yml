@@ -26,7 +26,7 @@ jobs:
         pip install -r requirements.txt
 
     - name: Run pytest
-      run: pytest
       env:
         SP_API_KEY: ${{ secrets.SP_API_KEY }}
         ORG_ID: ${{ secrets.ORG_ID }}
+      run: pytest
